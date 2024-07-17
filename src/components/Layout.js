@@ -1,4 +1,6 @@
 import HeaderNav from "./HeaderNav";
+import Header from "./Header";
+import Footer from "./Footer";
 import { Outlet, useLocation } from "react-router-dom";
 
 function Layout(){
@@ -9,6 +11,8 @@ function Layout(){
     return (
         <div>
             <HeaderNav />
+            <Header path={pathname} />
+            <Footer />
         </div>
     )
 }
