@@ -12,6 +12,7 @@ function Layout(){
         <div>
             <HeaderNav />
             <Header path={pathname} />
+            <Outlet />
             <Footer />
         </div>
     )
