@@ -1,0 +1,126 @@
+/* FocusArea.css */
+
+.focusarea-data-section {
+    padding: 110px;
+    background-color: #f5f5f5;
+}
+
+.focusarea-data-heading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    margin-top: -50px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    text-align: center;
+}
+
+.focusarea-text-yellow {
+    color: #ffaa00; /* Yellow color for specific text */
+    font-weight: bold;
+    font-family: 'Georgia', sans-serif;
+}
+
+.focusarea-paragraph {
+    font-family: 'Georgia', sans-serif; /* Default font for paragraphs */
+    font-size: 1em;
+    color: #000000;
+    margin-bottom: 20px; /* Optional: Space below the paragraph */
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.focusarea-paragraph .focusarea-text-yellow {
+    font-family: 'Fuzzy Bubbles', cursive; /* Fuzzy Bubbles font for specific text */
+    color: #ffaa00; /* Yellow color for specific text */
+}
+
+
+.focusarea-key-items {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 60px;
+}
+
+.focusarea-key-item {
+    flex: 1;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.focusarea-icon-area {
+    display: block;
+    text-align: center;
+}
+
+.focusarea-icon-area img {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.focusarea-icon-text {
+    margin-top: 30px;
+    font-size: 1.4em;
+    font-family: Georgia, serif;
+    font-weight: 550;
+    transition: color 0.3s ease;
+}
+
+.focusarea-key-item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ffaa00;
+}
+
+.focusarea-key-item:hover .focusarea-icon-text {
+    color: #ffaa00;
+}
+
+.focusarea-key-item:hover {
+    transform: scale(1.05);
+}
+
+.focusarea-metrics-section {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly */
+    align-items: center; /* Centers items vertically */
+    width: 100%;
+    padding: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/public/images/impact-bg.webp);
+}
+.focusarea-metrics-section > div {
+    width: 20%; /* Adjust the width as needed */
+    height: 100px;
+    text-align: center;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.focusarea-metrics-section h2 {
+    font-size: 80px;
+    font-weight: 800;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    margin-top: -30px;
+}
+
+.focusarea-metrics-section h2:hover  {
+    color: #ffaa00;
+}
+.focusarea-metrics-section p {
+    color: #000;
+    margin: 5px 0 0;
+    font-weight: 510;
+    margin-top: -10px;
+    font-family: 'Kanit';
+    line-height: 150%;
+    font-size: 18px;
+    font-style: normal;
+}

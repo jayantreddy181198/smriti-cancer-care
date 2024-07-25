@@ -1,0 +1,39 @@
+/* ScrollToTopButton.css */
+#edgtf-back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    background-color: #ffaa00; /* Yellow color for the button */
+    border: none;
+    border-radius: 10%;
+    width: 37px;
+    height: 40px;
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000; /* Ensures it’s above other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none; /* Remove underline from links */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  #edgtf-back-to-top.show {
+    display: flex; /* Show the button when scrolling */
+  }
+  
+  #edgtf-back-to-top .fa-arrow-up {
+    font-size: 20px; /* Adjust size as needed */
+    color: #fff; /* Icon color */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect */
+  #edgtf-back-to-top:hover {
+    transform: translateY(-10px); /* Move the button up */
+  }
+  
+  #edgtf-back-to-top:hover .fa-arrow-up {
+    transform: translateY(-5px); /* Move the icon up a little more */
+  }
+  

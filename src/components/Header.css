@@ -1,0 +1,85 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    height: 80px;
+    z-index: 60;
+    padding-bottom: 10px;
+    background-color: rgba(47, 46, 46, 0.59); /* Increase transparency for more see-through effect */
+    backdrop-filter: blur(5px); /* Optional: adds blur effect to the background */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for showing/hiding */
+}
+
+.header-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between title and menu */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Ensure full width */
+    padding: 8px 50px;
+}
+
+.header-title {
+    font-size: 2rem; /* Size of the title */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    font-family: 'Montserrat', sans-serif; /* Attractive font */
+    font-weight: 900; /* Bold weight */
+    margin-left: 50px;
+}
+
+.text-white {
+    color: #08415C;
+    font-family: 'Georgia', sans-serif;
+}
+
+.text-yellow {
+    color: #ffaa00; /* Yellow color for "Cancer" */
+    font-family: 'Georgia', sans-serif;
+
+}
+
+.header-navigator {
+    display: flex; /* Flexbox for navigation */
+}
+
+.header-menu {
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Horizontal layout */
+}
+
+.header-item {
+    margin-left: 25px; /* Space between items */
+}
+
+.header-link {
+    color: #08415C; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 600; /* Bold links */
+    transition: color 0.3s; /* Smooth color transition */
+    font-family: 'Georgia', sans-serif;
+}
+
+.header-link:hover {
+    color: #ffaa00; /* Change color on hover */
+}
+
+.header-link-wrapper {
+    text-decoration: none; /* Remove underline from the title link */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}

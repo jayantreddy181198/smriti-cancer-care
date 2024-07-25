@@ -1,0 +1,249 @@
+.donation-main-banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(/public/images/pexels-thirdman-7659454.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    margin-top: -80px;
+  }
+  
+  .donation-banner-text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    width: 55%;
+    color: #f6f6f6;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 0;
+    padding: 130px;
+  }
+  
+  .donation-banner-heading-3 {
+    font-size: 1.2rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 1px; /* Adjust this value to control the space */
+  }
+  
+  .donation-banner-heading-2 {
+    font-size: 2.0rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px; /* Adjust this value to control the space */
+  }
+  
+  .donation-container {
+    position: absolute;
+    top: 500px; /* Adjust this value to control how much of the form is on the banner */
+    left: 34%;
+    transform: translateX(-50%);
+    width: 550px; /* Width of the form */
+    z-index: 5;
+  }
+  
+  .donation-form {
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #000000;
+    overflow: hidden; /* Ensures the border-radius is applied to the header */
+  }
+  
+  .donation-header {
+    background-color: #F0F3FA; /* Header color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .donation-heading {
+    color: #1F293E; /* Text color inside the header */
+    margin: 0; /* Ensure there's no margin around the heading */
+    font-size: 26px; /* Increase font size */
+    margin-bottom: 30px;
+    font-weight: 520;
+    line-height: 1.4em;
+    font-family: "Poppins", Sans-serif;
+  }
+  
+  .donation-tab-container {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  
+  .donation-tab, .donation-active-tab {
+    padding: 10px 100px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent; /* Underline effect */
+    margin: 0 5px;
+    color: #6c6060; /* Tab text color */
+    font-weight: 520;
+  }
+  
+  .donation-active-tab {
+    border-bottom: 2px solid #000000; /* Active tab underline color */
+    color: #000000;
+  }
+  
+  .donation-subheading {
+    display: block;
+    margin: 90px 20px 40px 20px;
+    text-align: center;
+    font-weight: 520;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+  }
+  
+  .donation-amount-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    margin: 0 20px 10px 20px;
+  }
+  
+  .donation-amount-box {
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1 1 80px; /* Flexible width for boxes */
+    margin: 0 5px; /* Margin between boxes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; /* Smaller font size */
+    position: relative; /* Needed for input position */
+    background-color: #F0F3FA;
+  }
+  
+  .donation-custom-input {
+    width: 100%;
+    padding: 8px;
+    border: none; /* Remove default border */
+    background-color: transparent; /* Remove default background */
+    color: #fafafa;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensure padding does not exceed the box */
+  }
+  
+  .donation-label {
+    display: block;
+    margin-bottom: 8px;
+    padding: 0 20px;
+  }
+  
+  .donation-input {
+    width: calc(100% - 40px); /* Adjusting width to accommodate padding */
+    padding: 8px;
+    margin: 0 20px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #F0F3FA;
+  }
+  
+  .donation-input-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 10px 20px;
+  }
+  
+  .donation-input-row .donation-input {
+    width: calc(50% - 10px); /* Half-width minus the gap */
+  }
+  
+  .donation-textarea {
+    width: calc(100% - 40px); /* Adjusting width to accommodate padding */
+    padding: 8px;
+    margin: 0 20px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .donation-button-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin: 20px; /* Adjust margin if needed */
+  }
+  
+  .donation-button {
+    width: 30%; /* Adjust width to content */
+    padding: 8px 16px; /* Reduce padding to make the button smaller */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size for smaller text */
+  }
+  
+  .donation-checkbox-row {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px 20px;
+    margin-left: 40px;
+  }
+  
+  .donation-checkbox-label {
+    margin-left: 10px;
+    color: #8e8f91;
+  }
+  
+  .donation-banner-2 {
+    background: white;
+    color: #1F293E;
+    padding: 20px;
+    height: 1000px;
+  }
+  
+  .form-and-faq-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60%;
+    
+  }
+  
+  .faq-section {
+    width: 90%;
+    padding: 50px;
+  }
+  
+  .faq-heading {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  
+  .faq-content {
+    margin-top: 50px;
+  }
+  
+  .faq-item {
+    margin-bottom: 40px;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+  }
+  
+  .faq-answer {
+    margin-top: 5px;
+  }
+  
+  .donation-disclaimer-box {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Footer.css"
 
 const Footer = () => {
   const [Links, setLinks] = useState(false);
@@ -21,13 +22,21 @@ const Footer = () => {
       <section class="footer">
         <div class="footer-content">
           <div class="footer-about">
-            <img src='images/LOGO.png' alt="Smriti Cancer Care Foundation Logo" className="ngo-logo" />
+            <h1 className="footer-title">
+                <span className="text-white">Smriti</span>
+                <span className="text-yellow">Cancer</span>
+                <span className="text-white">Care</span>
+            </h1>
             <p>
                 The Smriti Cancer Care Foundation is<br /> dedicated to providing comprehensive<br /> support and care to cancer patients<br /> and their families. Our initiatives include<br /> awareness programs, medical support,<br /> and community engagement.
             </p>
             <br />
             <p>
-                Registered CSR Number: CSR00000343 <br />Registered Charity Number: 2967 (Pune)
+                <span>Registered CSR Number: </span>
+                <span className="text-color">CSR00000343</span>
+                <br />
+                <span>Registered Charity Number: </span>
+                <span className="text-color">2967 (Pune)</span>
             </p>
           </div>
           <div class="footer-links">
@@ -42,23 +51,23 @@ const Footer = () => {
             <br />
             <ul class={"footer-links-ul " + (Links && "active-links")}>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 <Link to="about"> About</Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 <Link to="causes"> Impact</Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 <Link to="event"> Resources</Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 <Link to="news"> Get Involved</Link>
               </li>
               <li>
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 <Link to="contact"> Donate</Link>
               </li>
             </ul>

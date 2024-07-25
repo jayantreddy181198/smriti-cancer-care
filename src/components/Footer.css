@@ -1,0 +1,204 @@
+
+  
+  .footer {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+  }
+  .footer-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+    align-items: flex-start; /* Change to flex-start to align items at the top */
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-family: 'Georgia', sans-serif;
+  }
+  
+  .footer-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensure items in this section are aligned to the start */
+    max-width: 300px; /* Add a max-width if necessary to control the layout */
+    margin-left: 0;
+  }
+  
+  .footer-links {
+    min-width: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-links-ul {
+    list-style-type: none;
+  }
+  
+  .footer-links li {
+    padding: 5px;
+  }
+
+  .fa-arrow-right {
+    color: #ffaa00;
+  }
+  
+  h2.links {
+    justify-content: flex-start;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .contact-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+  .contact-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
+  
+  .location {
+    width: 30px;
+    height: 30px;
+    background-color: #ffaa00;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+  }
+  
+  i.one {
+    position: absolute;
+    font-size: 20px;
+    top: 13%;
+    left: 30%;
+  }
+  
+  i.two {
+    position: absolute;
+    font-size: 20px;
+    top: 14%;
+    left: 23%;
+  }
+  
+  i.three {
+    position: absolute;
+    font-size: 18px;
+    top: 16%;
+    left: 20%;
+  }
+  
+  .contact-heading h3 {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px dotted rgb(197, 1, 1);
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  
+  .contact-card:last-child {
+    border-bottom: none;
+  }
+  
+  .contact-ad {
+    width: 80%;
+    font-size: 1rem;
+    margin-left: 45px;
+    float: right;
+    justify-content: flex-end;
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+  }
+  
+
+  .email-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-heading {
+    margin-bottom: 10px;
+  }
+  
+  .email-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+  }
+  
+  .email-form textarea {
+    width: 100%;
+    padding: 65px; /* Adjust padding for better usability */
+    margin: 10px 0; /* Simplify margin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+    text-align: left; /* Ensures text alignment is left */
+    resize: vertical; /* Optional: allows vertical resizing */
+}
+  .email-form button {
+    background-color: #ffaa00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .email-form button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .footer-divider {
+    border-top: 1px solid #ffaa00; /* Adjust color and thickness */
+    width: 100%;
+    margin: 30px 0; /* Adjust margin as needed */
+  }/* styles/Home.css */
+  
+.footer-title {
+    font-size: 1.5rem; /* Size of the title */
+    margin: 0px; /* Remove default margin */
+    margin-left: 15px;
+    margin-bottom: 20px;
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    font-family: 'Georgia', sans-serif; /* Attractive font */
+    font-weight: 900; /* Bold weight */
+}
+
+.text-color {
+    font-family: 'Georgia', sans-serif;
+    color: #ffaa00;
+}

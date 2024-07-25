@@ -1,84 +1,41 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import './Header.css';
+import HeaderNav from "./HeaderNav";
 
-function Header(path){
-    const [Toggle, setToggle] = useState("");
+function Header() {
     return (
-        <header>
-          <div class="logo-container">
-            <Link to="/">
-              <img src="images/LOGO.png" class="logo" />
-            </Link>
-          </div>
-    
-          <div class="ham-btn">
-            {Toggle == "active" ? (
-              <i
-                class="fa fa-times"
-                onClick={() => {
-                  setToggle("");
-                }}
-              ></i>
-            ) : (
-              <i
-                class="fa fa-solid fa-bars"
-                onClick={() => {
-                  setToggle("active");
-                }}
-              ></i>
-            )}
-          </div>
-          <div
-            class={"header-links " + Toggle}
-            onClick={() => {
-              setToggle("");
-            }}
-          >
-            <ul className="scroll-auto">
-              <Link to="/about" className="w-[100%] lg:w-auto">
-                <li>
-                  <a href="#" style={{ color: path === "/about" ? "red" : "" }}>
-                    About
-                  </a>
-                </li>
-              </Link>
-              <Link to="/impact" className="w-[100%] lg:w-auto">
-                <li>
-                  <a href="#" style={{ color: path === "/impact" ? "red" : "" }}>
-                    Impact
-                  </a>
-                </li>
-              </Link>
-              <Link to="/resources" className="w-[100%] lg:w-auto">
-                <li>
-                  <a href="#" style={{ color: path === "/resources" ? "red" : "" }}>
-                    Resources
-                  </a>
-                </li>
-              </Link>
-              <Link to="/get-involved" className="w-[100%] lg:w-auto">
-                <li>
-                  <a href="#" style={{ color: path === "/get-involved" ? "red" : "" }}>
-                    Get Involved
-                  </a>
-                </li>
-              </Link>
-              <Link to="/donate" className="w-[100%] lg:w-auto">
-                    <li>
-                        <a
-                            href="#"
-                            style={{ color: path === "/donate" ? "red" : "" }}
-                            className="donate-link"
-                        >
-                        Donate
-                        </a>
-                    </li>
+        <header className="header">
+            <div className="header-container">
+                <Link to="/" className="header-link-wrapper">
+                    <h1 className="header-title">
+                        <span className="text-white">Smriti</span>
+                        <span className="text-yellow">Cancer</span>
+                        <span className="text-white">Care</span>
+                    </h1>
                 </Link>
-            </ul>
-          </div>
+                <nav className="header-navigator">
+                    <ul className="header-menu">
+                        <li className="header-item">
+                            <Link to="/aboutus" className="header-link">About Us</Link>
+                        </li>
+                        <li className="header-item">
+                            <Link to="/impact" className="header-link">Impact</Link>
+                        </li>
+                        <li className="header-item">
+                            <Link to="/resources" className="header-link">Resources</Link>
+                        </li>
+                        <li className="header-item">
+                            <Link to="/get-involved" className="header-link">Get Involved</Link>
+                        </li>
+                        <li className="header-item">
+                            <Link to="/donate" className="header-link">Donate</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-      );
-    };
-    
+    );
+}
+
 export default Header;
-    

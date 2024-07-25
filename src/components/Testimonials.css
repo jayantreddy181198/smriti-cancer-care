@@ -1,0 +1,80 @@
+.testimonials-section {
+  padding: 80px 0;
+  background: rgb(239, 234, 219);
+  overflow: hidden; /* Ensures the container doesn't collapse if floats are used */
+}
+
+.testimonial {
+  background: #ffffff;
+  border: 1px ;
+  padding: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 1.5s ease-in-out;
+  border-radius: 0px; /* Rounded corners */
+  box-sizing: border-box; /* Includes padding and border in the element's width and height */
+}
+
+.testimonial-content {
+  margin-bottom: 20px;
+}
+
+.testimonial-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Georgia', sans-serif;
+}
+
+.testimonial-text {
+  color: #888;
+  font-family: 'Georgia', sans-serif;
+}
+
+.testimonial-carousel-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-image-holder img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-author-text {
+  font-weight: bold;
+  font-family: 'Georgia', sans-serif;
+}
+
+.testimonial-job {
+  color: #ffaa00;
+  font-family: 'Georgia', sans-serif;
+}
+
+/* Slick Slider Styles */
+.slick-slide {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  padding: 0 20px; /* Increased horizontal padding to ensure more space */
+}
+
+.slick-track {
+  display: flex;
+  align-items: center; /* Ensures items are centered vertically */
+}
+
+.slick-dots {
+  bottom: -50px; /* Adjust dot position */
+}
+
+.slick-dots li button:before {
+  font-size: 16px; /* Increased font size for visibility */
+  color: #ffaa00; /* Color of the dots */
+  opacity: 1; /* Ensures full opacity */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000; /* Color of the active dot */
+}

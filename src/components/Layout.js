@@ -14,6 +14,7 @@ function Layout(){
             <Header path={pathname} />
             <Outlet />
             <Footer />
+
         </div>
     )
 }
